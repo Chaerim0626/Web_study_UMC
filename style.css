@@ -1,0 +1,65 @@
+div {
+    width : 100px;
+    height : 100px;
+    margin : 10px;
+    font-size : 30px;
+    background-color: pink;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.orange { /* 순차적으로 코드실행 */
+    background-color: orange;
+}
+
+#yellow { /*id는 하나의 element에만 사용*/
+    background-color: yellow;
+}
+
+div:hover {
+    background-color: grey;
+}
+
+#yellow:hover {
+    background-color: grey;
+}
+
+div:active {
+    background-color: purple;
+}
+
+input:focus { 
+    background-color: blue;
+}
+
+/* active, focus */
+
+/* 범위가 좁은 것이 우선순위가 높다. !important - id-class, 가상 선택자-태그 순서 */
+
+
+/* inline태그는 width, height 적용 X */
+/* display 속성으로 inline, block설정 가능 */
+p {
+    background-color: coral;
+    display : inline;
+}
+
+p:nth-child(5) {
+    /* 사라지기 */
+    margin : 30px 40px 50px 60px;
+    padding : 10px;
+    border : soild blue 3px;
+    border-bottom: 10px;
+}
+
+/* px : 가장 흔히 쓰임 절대 단위, %, em, m : 상대단위
+rem : 기준이 html 태그, m : 기준이 부모 요소 */
+html {
+    font-size : 16px;
+}
+
+div span {
+    font-size : 3rem;
+}
