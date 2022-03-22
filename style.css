@@ -43,23 +43,26 @@ input:focus {
 /* display 속성으로 inline, block설정 가능 */
 p {
     background-color: coral;
-    display : inline;
+    width : 30px;
+    height : 30px;
+
 }
 
 p:nth-child(5) {
-    /* 사라지기 */
     margin : 30px 40px 50px 60px;
     padding : 10px;
-    border : soild blue 3px;
-    border-bottom: 10px;
+    border-top : solid blue 3px;
+    border-bottom: solid blue 10px;
+    border-left :  solid blue 3px;
+    border-right :  solid blue 3px;
+
 }
 
-/* px : 가장 흔히 쓰임 절대 단위, %, em, m : 상대단위
-rem : 기준이 html 태그, m : 기준이 부모 요소 */
 html {
     font-size : 16px;
 }
 
 div span {
     font-size : 3rem;
+    
 }
