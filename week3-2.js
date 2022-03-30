@@ -26,8 +26,10 @@ travel_spot1.splice(4, 0, '멜버른', '아테네');
 //pop : 뒤에 원소 하나만 삭제
 travel_spot1.pop();
 
-//shitf : 앞에 원소 삭제
+//shift : 앞에 원소 삭제
 travel_spot1.shift();
 
 //splice
 travel_spot1.splice(3, 3);
+
+travel_spot1.splice(1, 1, '이스탄불', '하노이');
