@@ -46,5 +46,29 @@ for (let i=0; i<5; i++){
 }
 
 for(let i=0; i<5; i++){
-    console.log(" ".repeat(4-i)+"*".repeat(2*i+1)+" ".repeat(4-i));
+    console.log(" ".repeat(4-i)+"*".repeat(2*i+1));
 }
+
+for (let i = 0; i <5; i++) {
+    let star = "";
+    for (let j = 0; j <= i; j++) {
+      star += "*";
+    }
+    console.log(star);
+  }
+
+  for (let i=0; i<5; i++){
+      let star = "";
+      let space = " ";
+      for(let j=4; j>i; j--) {
+        space += " ";
+      }
+      for(let k=0; k < 2*i+1; k++){
+          star += "*";
+      }
+      let res = space + star;
+      console.log(res);
+  }
+
+
+
