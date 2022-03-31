@@ -41,6 +41,10 @@ do {
 //한 번이라도 실행하고 싶으면 do while사용
 
 
-for (let i=1; i<6; i++){
-    console.log('*'*i);
+for (let i=0; i<5; i++){
+        console.log("*".repeat(i+1));
+}
+
+for(let i=0; i<5; i++){
+    console.log(" ".repeat(4-i)+"*".repeat(2*i+1)+" ".repeat(4-i));
 }
