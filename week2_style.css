@@ -30,17 +30,6 @@ div:active {
     background-color: purple;
 }
 
-input:focus { 
-    background-color: blue;
-}
-
-/* active, focus */
-
-/* 범위가 좁은 것이 우선순위가 높다. !important - id-class, 가상 선택자-태그 순서 */
-
-
-/* inline태그는 width, height 적용 X */
-/* display 속성으로 inline, block설정 가능 */
 p {
     background-color: coral;
     width : 30px;
@@ -58,11 +47,3 @@ p:nth-child(5) {
 
 }
 
-html {
-    font-size : 16px;
-}
-
-div span {
-    font-size : 3rem;
-    
-}
