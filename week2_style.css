@@ -26,9 +26,6 @@ div:hover {
     background-color: grey;
 }
 
-div:active {
-    background-color: purple;
-}
 
 p {
     background-color: coral;
