@@ -36,9 +36,10 @@ const comments = [];
 
 function saveItem() {
 	localStorage.setItem("comments", JSON.stringify(comments));
+	//배열 형태로 아이템 저장 왜냐면 기본으로는 string형태 밖에 안되기에
 }
 
-function displayHistory () {
+function displayHistory () { //배열로 반환해 다시 화면에 보여주기
 	const savedComments = JSON.parse(localStorage.getItem('comments'));
 
 	savedComments.map(comment => {
